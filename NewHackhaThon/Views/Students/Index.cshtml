@@ -1,0 +1,83 @@
+﻿@model IEnumerable<NewHackhaThon.Models.Students>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Список студентов</h1>
+<form asp-action="Index" method="get">
+    <div class="form-actions no-color">
+        <p>
+            Поиск по имени: <input type="text" name="SearchString" value="@ViewData["currentFilter"]" />
+            <input type="submit" value="Поиск" class="btn btn-default" /> 
+            <a asp-action="Index">Назад</a>
+        </p>
+    </div>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+
+
+        <tr>
+            
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["Student_SurnameSortParm"]">@Html.DisplayNameFor(model => model.Student_Summ)</a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["Student_SurnameSortParm"]">@Html.DisplayNameFor(model => model.Student_Name)</a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["Student_SurnameSortParm"]">@Html.DisplayNameFor(model => model.Student_Surname)</a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["Student_SurnameSortParm"]">@Html.DisplayNameFor(model => model.Student_College)</a>
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["Student_SurnameSortParm"]">@Html.DisplayNameFor(model => model.Student_City)</a>
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Student_Specialty)
+            </th>
+            <th>
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["CourseSortParm"]">@Html.DisplayNameFor(model => model.Student_Course)</a>
+            </th>
+
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Student_Summ)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Student_Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Student_Surname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Student_College)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Student_City)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Student_Specialty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Student_Course)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.StudentsId">Редактировать</a> <br />
+                <a asp-action="Delete" asp-route-id="@item.StudentsId">Удалить</a>
+            </td>
+            <td><a asp-action="About" asp-route-id="@item.StudentsId">Подробнее</a></td>
+        </tr>
+        }
+    </tbody>
+</table>

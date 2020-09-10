@@ -1,0 +1,61 @@
+﻿@model NewHackhaThon.Models.Students
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Редактировать</h1>
+
+<h4>Студенты</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="StudentsId" />
+            <div class="form-group">
+                <label asp-for="Student_Summ" class="control-label"></label>
+                <input asp-for="Student_Summ" class="form-control" />
+                <span asp-validation-for="Student_Summ" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Student_Name" class="control-label"></label>
+                <input asp-for="Student_Name" class="form-control" />
+                <span asp-validation-for="Student_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Student_Surname" class="control-label"></label>
+                <input asp-for="Student_Surname" class="form-control" />
+                <span asp-validation-for="Student_Surname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Student_College" class="control-label"></label>
+                <input asp-for="Student_College" class="form-control" />
+                <span asp-validation-for="Student_College" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Student_City" class="control-label"></label>
+                <input asp-for="Student_City" class="form-control" />
+                <span asp-validation-for="Student_City" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Student_Specialty" class="control-label"></label>
+                <input asp-for="Student_Specialty" class="form-control" />
+                <span asp-validation-for="Student_Specialty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Student_Course" class="control-label"></label>
+                <input asp-for="Student_Course" class="form-control" />
+                <span asp-validation-for="Student_Course" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Назад</a>
+</div>
+

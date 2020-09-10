@@ -1,0 +1,64 @@
+﻿@model NewHackhaThon.Models.Students
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Удалить</h1>
+
+<h3>Уверены что хотите удалить запись?</h3>
+<div>
+    <h4>Students</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Student_Summ)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Student_Summ)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Student_Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Student_Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Student_Surname)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Student_Surname)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Student_College)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Student_College)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Student_City)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Student_City)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Student_Specialty)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Student_Specialty)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Student_Course)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Student_Course)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="StudentsId" />
+        <input type="submit" value="Delete" class="btn btn-danger" />
+        <a asp-action="Index">Назад</a>
+    </form>
+</div>

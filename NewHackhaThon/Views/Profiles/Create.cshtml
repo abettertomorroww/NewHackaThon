@@ -1,0 +1,60 @@
+﻿@model NewHackhaThon.Models.Profiles
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Профиль</h1>
+
+<h4>Заполните поля</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Profile_Name" class="control-label"></label>
+                <input asp-for="Profile_Name" class="form-control" />
+                <span asp-validation-for="Profile_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Profile_Surname" class="control-label"></label>
+                <input asp-for="Profile_Surname" class="form-control" />
+                <span asp-validation-for="Profile_Surname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Profile_City" class="control-label"></label>
+                <input asp-for="Profile_City" class="form-control" />
+                <span asp-validation-for="Profile_City" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Profile_Who" class="control-label"></label>
+                <input asp-for="Profile_Who" class="form-control" />
+                <span asp-validation-for="Profile_Who" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Profile_College" class="control-label"></label>
+                <input asp-for="Profile_College" class="form-control" />
+                <span asp-validation-for="Profile_College" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Profile_Specialty" class="control-label"></label>
+                <input asp-for="Profile_Specialty" class="form-control" />
+                <span asp-validation-for="Profile_Specialty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Profile_Course" class="control-label"></label>
+                <input asp-for="Profile_Course" class="form-control" />
+                <span asp-validation-for="Profile_Course" class="text-danger"></span>
+            </div>
+            @*<div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>*@
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Перейти к тестам</a>
+</div>
+

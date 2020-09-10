@@ -1,0 +1,194 @@
+﻿@model NewHackhaThon.Models.Students
+
+@{
+    ViewData["Title"] = "About";
+}
+
+    <h1>Профиль</h1>
+    <h2> @Html.DisplayFor(model => model.Student_Name)  @Html.DisplayFor(model => model.Student_Surname)</h2>
+<div>
+    
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Student_Summ)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Student_Summ)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Student_Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Student_Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Student_Surname)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Student_Surname)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Student_College)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Student_College)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Student_City)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Student_City)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Student_Specialty)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Student_Specialty)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Student_Course)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Student_Course)
+        </dd>
+    </dl>
+</div>
+
+<footer>
+    <h2>Пройденные тесты</h2>
+  
+    <style>
+        .search-form {
+            display: flex;
+            flex-direction: row;
+            justify-content: normal;
+            align-items: center;
+        }
+
+            .search-form p {
+                font-size: 24px;
+                margin-right: 15px;
+            }
+
+            .search-form input {
+                margin-right: 15px;
+                margin-bottom: 6px;
+            }
+
+            .search-form button {
+                margin-right: 15px;
+                margin-bottom: 6px;
+            }
+
+        .image-block {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .image-block img {
+                transform: scale(1.1);
+            }
+    </style>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    <text>Дисциплина</text>
+                </th>
+                <th>
+                    <text>Тема теста</text>
+                </th>
+                <th>
+                    <text>Проводящая организация</text>
+                </th>
+                <th>
+                    <text>Результат</text>
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <text>Программирование под платформу .Net</text>
+                </td>
+                <td>
+                    <text>Паттерны</text>
+                </td>
+                <td>
+                    <text>ДИТИ НИЯУ МИФИ</text>
+                </td>
+                <td>
+                    <text>85</text>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <text>Психология и педагогика</text>
+                </td>
+                <td>
+                    <text>Воспитание</text>
+                </td>
+                <td>
+                    <text>ДИТИ НИЯУ МИФИ</text>
+                </td>
+                <td>
+                    <text>77</text>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <text>ТРПО</text>
+                </td>
+                <td>
+                    <text>Структура программных систем</text>
+                </td>
+                <td>
+                    <text>НИЯУ МИФИ</text>
+                </td>
+                <td>
+                    <text>81</text>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <text>ТЯП</text>
+                </td>
+                <td>
+                    <text>Эквивалентные преобразования контекстно-свободных грамматик</text>
+                </td>
+                <td>
+                    <text>НИЯУ МИФИ</text>
+                </td>
+                <td>
+                    <text>63</text>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <text>Simatic Step 7</text>
+                </td>
+                <td>
+                    <text>Тест</text>
+                </td>
+                <td>
+                    <text>ООО НПФ "Сосны"</text>
+                </td>
+                <td>
+                    <text>93</text>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+  
+
+</footer>
+
+<div>
+    
+    <a asp-action="Index">Назад</a>
+</div>
