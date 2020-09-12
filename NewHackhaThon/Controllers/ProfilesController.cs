@@ -58,6 +58,9 @@ namespace NewHackhaThon.Controllers
             return View(profiles);
         }
 
-
+        public ActionResult ProfileMe()
+        {
+            return View();
+        }
     }
 }
