@@ -24,7 +24,20 @@ namespace NewHackhaThon.Controllers
             return View();
         }
 
-      
+        public ActionResult Game()
+        {
+            return View();
+        }
+
+        public ActionResult Game1()
+        {
+            return View();
+        }
+
+        public ActionResult Lvl1()
+        {
+            return View();
+        }
 
         public ActionResult Create()
         {

@@ -4,23 +4,23 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Список студентов</h1>
+<h1 class="title">Список студентов</h1>
 <form asp-action="Index" method="get">
     <div class="form-actions no-color">
-        <p>
-            Поиск по имени: <input type="text" name="SearchString" value="@ViewData["currentFilter"]" />
-            <input type="submit" value="Поиск" class="btn btn-default" /> 
-            <a asp-action="Index">Назад</a>
-        </p>
+        <div class="filterBar">
+            <div class="searchBar">
+                <span>Поиск по имени:</span>
+                <input type="text" class="myCustomInput" name="SearchString" value="@ViewData["currentFilter"]" />
+                <a class="myCustomLink" asp-action="Index">Поиск</a>
+            </div>
+            <a class="myCustomLink" asp-action="Index">Назад</a>
+        </div>
     </div>
 </form>
 <table class="table">
     <thead>
         <tr>
 
-
-        <tr>
-            
             <th>
                 <a asp-action="Index" asp-route-sortOrder="@ViewData["Student_SurnameSortParm"]">@Html.DisplayNameFor(model => model.Student_Summ)</a>
             </th>
@@ -37,14 +37,17 @@
                 <a asp-action="Index" asp-route-sortOrder="@ViewData["Student_SurnameSortParm"]">@Html.DisplayNameFor(model => model.Student_City)</a>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Student_Specialty)
+                <a asp-action="Index" asp-route-sortOrder="@ViewData["Student_SurnameSortParm"]">@Html.DisplayNameFor(model => model.Student_Specialty)</a>
             </th>
             <th>
                 <a asp-action="Index" asp-route-sortOrder="@ViewData["CourseSortParm"]">@Html.DisplayNameFor(model => model.Student_Course)</a>
             </th>
-
-
-            <th></th>
+            <th>
+                &nbsp;
+            </th>
+            <th>
+                &nbsp;
+            </th>
         </tr>
     </thead>
     <tbody>

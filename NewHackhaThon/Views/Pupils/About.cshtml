@@ -8,9 +8,10 @@
 
     <div>
         <h4> @Html.DisplayFor(model => model.Pupils_Name)   @Html.DisplayFor(model => model.Pupils_Surname)</h4>
-        
+
         <hr />
-        <dl class="row">
+
+        <dl class="row userInfo">
 
             <dt class="col-sm-2">
                 @Html.DisplayNameFor(model => model.Pupils_Summ)
@@ -50,6 +51,9 @@
             </dd>
 
         </dl>
+        <div>
+            <img src="~/css/chart_2.png" />
+        </div>
     </div>
 <footer>
     <h2>Пройденные тесты</h2>
@@ -180,10 +184,10 @@
         </tbody>
     </table>
     </footer>
-    <div>
+<div>
 
-        <a asp-action="Index">Назад</a>
-    </div>
+    <a class="myCustomLink" asp-action="Index">Назад</a>
+</div>
 
 
 
