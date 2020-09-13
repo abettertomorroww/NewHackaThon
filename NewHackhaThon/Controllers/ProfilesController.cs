@@ -39,6 +39,11 @@ namespace NewHackhaThon.Controllers
             return View();
         }
 
+        public ActionResult Lvl2()
+        {
+            return View();
+        }
+
         public ActionResult Create()
         {
             return View();

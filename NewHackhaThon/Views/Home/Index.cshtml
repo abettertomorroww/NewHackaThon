@@ -1,104 +1,75 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-
-
-
-
-<div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
-    <div class="col-md-6 px-0">
-        <h1 class="display-4 font-italic">Title of a longer featured blog post</h1>
-        <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
-        <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
-    </div>
-</div>
-
+﻿
 <div class="row mb-2">
     <div class="col-md-6">
-        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="width: 170%;">
             <div class="col p-4 d-flex flex-column position-static">
-                <strong class="d-inline-block mb-2 text-primary">World</strong>
-                <h3 class="mb-0">Featured post</h3>
-                <div class="mb-1 text-muted">Nov 12</div>
-                <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="stretched-link">Continue reading</a>
+                <strong class="d-inline-block mb-2 text-primary">Робототехника. Урок 1</strong>
+                @*<h3 class="mb-0">Featured post</h3>*@
+                <div class="mb-1 text-muted">13.09.2020</div>
+                <p class="card-text mb-auto">Посвящен возможностям конструктора VEX IQ. В этом уроке рассматриваем соревнования VEX IQ 2017 года</p>
+                <a href="http://edurobots.ru/2017/06/vex-iq-1/" class="stretched-link">Читать...</a>
             </div>
-            <div class="col-auto d-none d-lg-block">
-                <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+            <div @*class="col-auto d-none d-lg-block"*@>
+                <video src="~/lib/Возможности робота Vex IQ.mp4" style="width:100%"></video>
+            </div>
+            <div style="position:absolute; left: 40%; top: 44%;">
+                <svg width="40%" height="40%" viewBox="0 0 16 16" class="bi bi-play" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.804 8L5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z" />
+                </svg>
             </div>
         </div>
     </div>
     <div class="col-md-6">
-        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="width: 40%; left: 80%; height: 40%;">
             <div class="col p-4 d-flex flex-column position-static">
-                <strong class="d-inline-block mb-2 text-success">Design</strong>
-                <h3 class="mb-0">Post title</h3>
-                <div class="mb-1 text-muted">Nov 11</div>
-                <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="stretched-link">Continue reading</a>
+                <strong class="d-inline-block mb-2 text-success">Программирование</strong>
+                @*<h3 class="mb-0">Post title</h3>*@
+                <div class="mb-1 text-muted">12.09.2020</div>
+                <p class="mb-auto">Профессия будущего и актуальные навыки для ребенка за месяц! </p>
+                <img src="~/js/DkoM6cFX4AEkbiZ.jpg large.jpg" style="width: 100%; height:100%">
+                <a href="https://kcode.su/?yclid=5378481205392475326" class="stretched-link">Читать...</a>
             </div>
-            <div class="col-auto d-none d-lg-block">
-                <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        </div>
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="width: 40%; left: 80%;">
+            <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success">Квадрокоптер</strong>
+                @*<h3 class="mb-0">Post title</h3>*@
+                <div class="mb-1 text-muted">12.09.2020</div>
+                <p class="mb-auto">Как управлять квадрокоптером видео...</p>
+                <img src="~/lib/HTB1t4h.cKSSBuNjy0Flq6zBpVXaI.jpg" style="height: 50%; width: 100%;" />
+                <a href="https://www.youtube.com/watch?v=rJW7ehlgmIA" class="stretched-link">Читать...</a>
+                <link>
             </div>
         </div>
     </div>
+
 </div>
 
 
-
-<!-- Three columns of text below the carousel -->
+<h2>Лучшие результаты</h2>
 <div class="row">
     <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <div class="imgBlock">
+            <img src="~/css/winner1.jpg" />
+        </div>
         <h2></h2>
-        <p>11-классник из Магнитогорска Илья Чайка завоевал абсолютное первое место на Международной Менделеевской олимпиаде школьников по химии.</p>
+        <p>1 место по физике на нашем сайте занял 6-классник Иван Иванов</p>
         <p><a class="btn btn-secondary" href="#" role="button">Подробнее... »</a></p>
     </div><!-- /.col-lg-4 -->
     <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <div class="imgBlock">
+            <img src="~/css/winner2.jpg" />
+        </div>
         <h2></h2>
         <p>Школьник из Москвы получил золото на международной олимпиаде по математике в Румынии</p>
         <p><a class="btn btn-secondary" href="#" role="button">Подробнее... »</a></p>
     </div><!-- /.col-lg-4 -->
     <div class="col-lg-4">
-        <svg  width="140" height="140" xmlns="http://www.w3.org/2000/svg"></svg>
+        <div class="imgBlock">
+            <img src="~/css/winner3.jpg" />
+        </div>
         <h2></h2>
-        <p>Российская школьница выиграла Международную олимпиаду по олимпиаде по философии, которая прошла в Риме..</p>
+        <p>Наша ученица выиграла олимпиаду по философии, которая прошла в Риме..</p>
         <p><a class="btn btn-secondary" href="#" role="button">Подробнее... »</a></p>
     </div><!-- /.col-lg-4 -->
-</div><!-- /.row -->
-<!-- START THE FEATURETTES -->
-
-<hr class="featurette-divider">
-
-<div class="row featurette">
-    <div class="col-md-7">
-        <a href="https://iz.ru/1059458/2020-09-11/v-gosdume-predlozhili-dat-skidku-na-internet-uchashchimsia-na-udalenke" class="featurette-heading">В Госдуме предложили дать скидку на интернет учащимся на удаленке...</a>
-        <p class="lead">В России предложили предоставлять скидку до 50% за услуги интернета для семей, чьи дети вынуждены учиться из дома а связи с пандемией коронавируса. С такой инициативой выступил депутат Госдумы Иван Сухарев, сообщает RT в пятницу, 11 сентября.</p>
-    </div>
-    <img src="~/css/item1.jpg" />
 </div>
-
-<hr class="featurette-divider">
-
-<div class="row featurette">
-    <img src="~/css/item2.jpg" />
-    <div class="col-md-7">
-        <a href="https://iz.ru/1059388/ekaterina-iasakova-elena-sidorenko/raspustilis-chast-rossiiskikh-shkolnikov-snova-pereshla-na-udalenku" class="featurette-heading">Распустились: часть российских школьников снова перешла на удаленку...</a>
-        <p class="lead">Возвращение к занятиям возможно со справкой от врача или результатами ПЦР.</p>
-    </div>
-</div>
-
-<hr class="featurette-divider">
-
-<div class="row featurette">
-    <div class="col-md-7">
-        <a href="https://iz.ru/1057449/2020-09-06/shkolnikam-razreshili-ne-sdavat-testy-na-covid-19-v-techenie-uchebnogo-goda" class="featurette-heading">Школьникам разрешили не сдавать тесты на COVID-19 в течение учебног...</a>
-        <p class="lead">Российские школьники могут не сдавать тесты на наличие коронавируса в течение всего учебного года. Как завил в воскресенье, 6 сентября, первый замминистра просвещения Дмитрий Глушко, этого от них никто не будет требовать.</p>
-    </div>
-    <img src="~/css/item3.jpg" />
-</div>
-
-<hr class="featurette-divider">
-
-<!-- /END THE FEATURETTES -->

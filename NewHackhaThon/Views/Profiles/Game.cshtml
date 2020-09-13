@@ -3,44 +3,96 @@
     ViewData["Title"] = "Game";
 }
 
-    <h1>Математика</h1>
+<h1>Математика. Глава 1 - сложение, вычитание, деление и умножение</h1>
 
 
 <div class="gameBlock">
-    <img src="~/css/game.png" />
+    <img src="~/css/game.png" style="top: 3%;
+position: absolute;
+left: 20%;" />
     <div class="btnBlock">
-        <button style="padding:10px 4px; margin-bottom:5px; background-color:#b3adfb">1 уровень</button></br>
-        <button style="padding:0px 3px; background-color:#b3adfb" href="https://www.youtube.com/watch?v=KsNIg-p3OSY">Подсказка</button>
+        <a style="padding: 20px 5.5px; margin-bottom: 5px ;background-color: floralwhite" asp-action="Lvl1" asp-controller="Profiles">1 уровень</a></br>
+        <button style="padding: 0px 3px; background-color: floralwhite; margin-top: 10%; " href="https://www.youtube.com/watch?v=KsNIg-p3OSY">Подсказка</button>
     </div>
 
     <div class="btnBlock2">
-        <button style=" padding: 10px 4px; margin-bottom: 5px ; background-color:#b3adfb">2 уровень</button></br>
-        <button style="padding: 0px 3px ; background-color:#b3adfb">Подсказка</button>
+        <a style=" padding: 20px 5.5px; margin-bottom: 5px; background-color: floralwhite" asp-action="Lvl2" asp-controller="Profiles">2 уровень </a></br>
+        <button style="padding: 0px 3px ; background-color:floralwhite; margin-top: 10%">Подсказка</button>
     </div>
 
     <div class="btnBlock3">
-        <button style="padding: 10px 4px; margin-bottom: 5px; background-color: #b3adfb">3 уровень</button></br>
-        <button style="padding: 0px 3px;  background-color:#b3adfb">Подсказка</button>
+        <button style=" padding: 10px 4px; margin-bottom: 5px;
+        background-color: floralwhite">3 уровень</button></br>
+        <button style="padding: 0px 3px;  background-color:floralwhite">Подсказка</button>
     </div>
 
     <div class="btnBlock4">
-        <button style="padding: 0px 1px; margin-bottom: 2px; background-color:#b3adfb"> 3* уровень</button></br>
-        <button style="padding: 0px 3px; background-color:#b3adfb">Подсказка</button>
+        <button style="        padding: 0px 1px;
+        margin-bottom: 2px;
+        background-color: floralwhite">
+            3* уровень
+        </button></br>
+        <button style="padding: 0px 3px; background-color:floralwhite">Подсказка</button>
     </div>
 
     <div class="btnBlock5">
-        <button style="padding: 10px 1px; margin-bottom: 5px; background-color:#b3adfb">2* уровень</button></br>
-        <button style="padding: 0px 3px; background-color:#b3adfb">Подсказка</button>
+        <button style="        padding: 10px 0.9px;
+        margin-bottom: 4px;
+        background-color: floralwhite">
+            2* уровень
+        </button></br>
+        <button style="padding: 0px 3px; background-color: floralwhite">Подсказка</button>
     </div>
     <div class="btnBlock6">
-        <button style="padding: 10px 4px; margin-bottom: 5px; background-color:#b3adfb">4 уровень</button></br>
-        <button style="padding: 0px 3px; background-color:#b3adfb">Подсказка</button>
+        <button style="padding: 10px 4px;
+        margin-bottom: 5px;
+        background-color: floralwhite
+    ">
+            4 уровень
+        </button></br>
+        <button style="        padding: 0px 3px;
+        background-color: floralwhite">
+            Подсказка
+        </button>
     </div>
     <div class="btnBlock7">
-        <button style="padding: 10px 1px; margin-bottom: 5px ;background-color:#b3adfb">4* уровень</button></br>
-        <button style="padding: 0px 3px; background-color:#b3adfb">Подсказка</button>
+        <button style="        padding: 10px 0.9px;
+        margin-bottom: 5px;
+        background-color: floralwhite
+">
+            4* уровень
+        </button></br>
+        <button style="        padding: 0px 3px;
+        background-color: floralwhite">
+            Подсказка
+        </button>
     </div>
+
+
 </div>
+<div>
+    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 " style="        width: 20%;
+        left: 73%;
+        height: 47%;
+        top: 21%;
+        position: absolute;">
+        <div class="col p-4 d-flex flex-column position-static">
+            <strong class="d-inline-block mb-2 text-success">Программирование</strong>
+            @*<h3 class="mb-0">Post title</h3>*@
+            <div class="mb-1 text-muted">12.09.2020</div>
+            <p class="mb-auto">Профессия будущего и актуальные навыки для ребенка за месяц! </p>
+            <img src="~/js/DkoM6cFX4AEkbiZ.jpg large.jpg" style="width: 100%; height:100%">
+            <a href="https://kcode.su/?yclid=5378481205392475326" class="stretched-link">Читать...</a>
+        </div>
+    </div>
+    <button class="btn btn-outline-primary btn-lg btn-block" style="position: absolute;
+width: 20%;
+top: 70%;
+left: 73%;">
+        Следующая глава
+    </button>
+</div>
+
 
 
 
